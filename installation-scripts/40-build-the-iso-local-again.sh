@@ -31,19 +31,19 @@ echo
 
 	arcolinuxVersion='v24.04.03'
 
-	isoLabel='arcolinuxb-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
+	isoLabel='AxylOS-ISO'
 
 	# setting of the general parameters
 	archisoRequiredVersion="archiso 75-1"
-	buildFolder=$HOME"/arcolinuxb-build"
-	outFolder=$HOME"/ArcoLinuxB-Out"
+	buildFolder=$HOME"/AxylOS-Build"
+	outFolder=$HOME"/AxylOS-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
 
 	# If you want to add packages from the chaotics-aur repo then
 	# change the variable to true and add the package names
 	# that are hosted on chaotics-aur in the packages.x86_64 at the bottom
 
-	chaoticsrepo=false
+	chaoticsrepo=true
 	
 	# If you are ready to use your personal repo and personal packages
 	# https://arcolinux.com/use-our-knowledge-and-create-your-own-icon-theme-combo-use-github-to-saveguard-your-work/
@@ -249,18 +249,18 @@ echo
 	#Setting variables
 
 	#profiledef.sh
-	oldname1='iso_name="arcolinuxl'
-	newname1='iso_name="arcolinuxb-'$desktop
+	oldname1='iso_name="AxylOS-ISO'
+	newname1='iso_name="AxylOS-ISO'
 
 	oldname2='iso_label="arcolinuxl'
-	newname2='iso_label="arcolinuxb-'$desktop
+	newname2='iso_label="AxylOS-ISO'
 
 	oldname3='ArcoLinuxL'
-	newname3='ArcoLinuxB-'$desktop
+	newname3='AxylOS-ISO'
 
 	#hostname
 	oldname4='ArcoLinuxL'
-	newname4='ArcoLinuxB-'$desktop
+	newname4='AxylOS-ISO'
 
 	#sddm.conf user-session
 	oldname5='Session=xfce'
